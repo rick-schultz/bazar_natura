@@ -30,13 +30,18 @@ body {
   text-align: center;
   padding: 18px 0 0px 0;
   margin: 20px 0px 0px 20px;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
 }
 h1 span {
   border: 4px dashed #666354;
   padding: 10px;
 }
-img {
+.column {
   margin: 20px 20px;
+width: 200px;
 }
 p {
   padding: 0;
@@ -79,7 +84,4 @@ p {
   display: flex;
   justify-content: center;
   margin: 0 20px;
-}
-#sectitle {
-  text-decoration: none;
 }
