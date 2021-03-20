@@ -2,25 +2,42 @@ html {
   margin: 0;
   padding: 0;
 }
+#header {
+  display: flex;
+  justify-content: center;
+}
+#header img {
+  border-radius: 20px;
+  margin: 20px 0;
+}
 body {
   font-family: 'Handlee', cursive;
   font-size: 13pt;
-  background-color: #efefef;
+  background-color: #ffffff;
   padding: 10px;
   margin: 0;
 }
-h1 {
+#titleh1 {
   font-size: 20pt;
   color: #666354;
   text-align: center;
   padding: 18px 0 18px 0;
-  margin: 0 0 10px 0;
+  margin: 20px 20px;
+}
+#sectitleh1 {
+  font-size: 20pt;
+  color: #666354;
+  text-align: center;
+  padding: 18px 0 0px 0;
+  margin: 20px 0px 0px 20px;
 }
 h1 span {
   border: 4px dashed #666354;
   padding: 10px;
 }
-
+img {
+  margin: 20px 20px;
+}
 p {
   padding: 0;
   margin: 0;
@@ -35,78 +52,16 @@ p {
     margin-bottom: 10px;
     border-radius: 10px;
   }
-  hr {
-    border: 0;
-    height: 1px;
-    background: #f36f48;
+  #whatsappdiv {
+    display: flex;
+    justify-content: center;
   }
-  form {
-    text-align: center;
-    margin-top: 0;
-  }
-  .submit {
-    background-color: #666354;
-    padding: 12px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    margin: 0;
-    font-weight: bold;
-  }
-  .submit:hover {
-    background-color: #666354;
-  }
-  textarea {
-    height: 100px;
-  }
-  input, textarea {
-    margin-bottom: 10px;
-    font-size: 11pt;
-    padding: 15px 10px 10px;
-    border: 1px solid #cecece;
-    background-color: #efefef;
-    color: #787575;
-    border-radius: 5px;
-    width: 70%;
-    outline: none;
-  }
-  .face {
-    transform: scale(0.4);
-    margin: 0 auto;
-    display: block;
-    margin-top: -35px;
-    margin-bottom: -25px;
-  }
-  #contacts img {
+  #whatsapplogo {
     height: 50px;
     width: 50px;
-    margin-left: 7px;
-    margin-right: 7px;
-  }
-  #contacts a {
-    text-decoration: none;
-  }
-  #contacts img:hover {
-    opacity: 0.8;
-  }
-  #contacts {
-    text-align: center;
-  }
-  .copyright {
-    font-size: 8pt;
-    text-align: right;
-    padding-bottom: 10px;
-    color: grey;
-  }
-  #header img {
-    width:800px;
-    border-radius: 20px;
-  }
+    }
   .column {
     float: left;
-    width: 25%;
   }
   /* Clear floats after the columns */
   .row:after {
@@ -114,3 +69,14 @@ p {
     display: table;
     clear: both;
   }
+  #row {
+    margin: 20px 0;
+  }
+  #produtosp {
+    text-align: center;
+  }
+#divroll {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+}
