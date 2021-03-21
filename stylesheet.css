@@ -1,90 +1,36 @@
-html {
-  margin: 0;
-  padding: 0;
-}
-#header {
-  display: flex;
-  justify-content: center;
-}
-#header img {
-  border-radius: 20px;
-  margin: 20px 0;
-}
-body {
-  font-family: 'Handlee', cursive;
-  font-size: 13pt;
-  background-color: #ffffff;
-  padding: 10px;
-  margin: 0;
-}
-#titleh1 {
-  font-size: 20pt;
-  color: #666354;
-  text-align: center;
-  padding: 18px 0 18px 0;
-  margin: 20px 20px;
-}
-#sectitleh1 {
-  font-size: 20pt;
-  color: #666354;
-  text-align: center;
-  padding: 18px 0 0px 0;
-  margin: 20px 0px 0px 20px;
-  text-decoration: none;
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-}
-#nosubh1 {
-  text-decoration: none;
-}
-h1 span {
+#spanh1 {
   border: 4px dashed #666354;
   padding: 10px;
 }
-.column {
-  margin: 20px 20px;
-width: 200px;
-}
-p {
-  padding: 0;
-  margin: 0;
-  font-size: 15pt;
-}
-#faceicon {
-  border-radius: 10px;
+#whatsapplogo {
+  height: 50px;
+  width: 50px;
   }
-  section {
-    background-color: #fff;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-  }
-  #whatsappdiv {
+  #sectitleh1 {
+    font-size: 20pt;
+    color: #666354;
+    text-align: center;
+    padding: 18px 0 0px 0;
+    margin: 20px 0px 0px 20px;
+    text-decoration: none;
+    display: inline-block;
     display: flex;
     justify-content: center;
   }
-  #whatsapplogo {
-    height: 50px;
-    width: 50px;
-    }
-  .column {
-    float: left;
-  }
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  #row {
-    margin: 20px 0;
-  }
-  #produtosp {
+  #titleh1 {
+    font-size: 20pt;
+    color: #666354;
     text-align: center;
+    padding: 18px 0 18px 0;
+    margin: 20px 20px;
   }
-#divroll {
-  display: flex;
-  justify-content: center;
-  margin: 0 20px;
-}
+  #nosubh1 {
+    text-decoration: none;
+  }
+  #products {
+    max-height: 100%;
+    width: auto;
+  }
+  #headerimg {
+    border-radius: 20px;
+  }
