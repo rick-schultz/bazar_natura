@@ -1,1 +1,0 @@
-# bazar_natura

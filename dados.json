@@ -1,0 +1,100 @@
+[
+    {
+        "categoria":"Maquiagem",
+        "produtos":[
+            {
+                "id":1,
+                "img":"img/produto_001.jpg",
+                "nome":"Batom de Cereja",
+                "descricao":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                "preco":"12,00",
+                "url_compra":"http://www.uol.com.br"
+            },
+            {
+                "id":2,
+                "img":"img/produto_002.jpg",
+                "nome":"Batom de Vermelho",
+                "descricao":"Some quick example text to build on the card title and make up the.",
+                "preco":"10,00",
+                "url_compra":"http://www.amazon.com"
+            },
+            {
+                "id":3,
+                "img":"img/produto_003.jpg",
+                "nome":"Batom de Verde",
+                "descricao":"Some quick example text to build on the card title and make up the bulk.",
+                "preco":"11,00",
+                "url_compra":"http://www.globo.com.br"
+            }                        
+        ]
+    },
+    {
+        "categoria":"Cabelo",
+        "produtos":[
+            {
+                "id":4,
+                "img":"img/produto_004.jpg",
+                "nome":"Teste de Produto!!",
+                "descricao":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                "preco":"12,00",
+                "url_compra":"http://www.uol.com.br"
+            },
+            {
+                "id":5,
+                "img":"img/produto_005.jpg",
+                "nome":"Batom de Vermelho",
+                "descricao":"Some quick example text to build on the card title and make up the.",
+                "preco":"10,00",
+                "url_compra":"http://www.amazon.com"
+            },
+            {
+                "id":6,
+                "img":"img/produto_006.jpg",
+                "nome":"Batom de Verde",
+                "descricao":"Some quick example text to build on the card title and make up the bulk.",
+                "preco":"11,00",
+                "url_compra":"http://www.globo.com.br"
+            }                        
+        ]
+    },
+    {
+        "categoria":"Perfumaria",
+        "produtos":[
+            {
+                "id":7,
+                "img":"img/produto_007.jpg",
+                "nome":"Batom de Cereja",
+                "descricao":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                "preco":"12,00",
+                "url_compra":"http://www.uol.com.br"
+            },
+            {
+                "id":8,
+                "img":"img/produto_003.jpg",
+                "nome":"Batom de Verde",
+                "descricao":"Some quick example text to build on the card title and make up the bulk.",
+                "preco":"11,00",
+                "url_compra":"http://www.globo.com.br"
+            }                        
+        ]
+    },
+    {
+        "categoria":"Cosméticos",
+        "produtos":[
+            {
+                "id":9,
+                "img":"img/produto_001.jpg",
+                "nome":"Batom de Cereja",
+                "descricao":"Some quick example text to build on the card title and make up the bulk of the card's content.",
+                "preco":"12,00",
+                "url_compra":"http://www.uol.com.br"
+            }                       
+        ]
+    },
+    {
+        "categoria":"Barba",
+        "produtos":[
+                      
+        ]
+    }              
+]

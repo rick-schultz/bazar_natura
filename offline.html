@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Manifest -->
+    <link href="manifest.json" rel="manifest" />
+
+    <!-- Metas & Links Plataformas -->
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="icons/favicon.ico" type="image/x-icon" />
+
+    <!-- iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Bazar Natura" />
+    <link rel="apple-touch-icon" href="icons/152.png" />
+
+    <meta name="description" content="Bazar Natura" />
+    <meta name="theme-color" content="#ff5cb7" />
+
+    <title>Bazar Natura - sua loja on-line</title>
+  </head>
+  <body>
+    <header class="container-fluid fixed-top">
+      <div class="area_logo">
+        <img src="img/logo.png" />
+      </div>
+    </header>
+
+    <main class="container" id="conteudo"></main>
+
+    <footer class="container-fluid fixed-bottom"></footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      //Requisição assincrona para pegar os dados do JSON "Webservice"
+      var ajax = new XMLHttpRequest()
+
+      ajax.open('GET', './dados.json', true)
+      ajax.send()
+      ajax.onreadystatechange = function () {
+        let conteudo = document.getElementById('conteudo')
+
+        if (this.readyState == 4 && this.status == 200) {
+          let data_json = JSON.parse(this.responseText)
+
+          if (data_json.length == 0) {
+            conteudo.innerHTML = template_alerta(
+              'Não há produtos cadastrados!',
+              'warning'
+            )
+          } else {
+            //Desenhar os produtos (Cards)
+            let conteudo_html = template_alerta(
+              'Você está acessando a versão off-line desta loja, para realizar compras, conecte-se a uma rede.',
+              'warning'
+            )
+
+            //Desenhar categorias
+            for (let i = 0; i < data_json.length; i++) {
+              conteudo_html += template_categoria(data_json[i].categoria)
+
+              if (data_json[i].produtos.length == 0) {
+                conteudo_html += template_alerta(
+                  'Não há produtos cadastrados para esta categoria!',
+                  'warning'
+                )
+              } else {
+                //Desenhar os cards dos produtos
+
+                conteudo_html += '<div class="row">'
+
+                for (let j = 0; j < data_json[i].produtos.length; j++) {
+                  conteudo_html += template_produto(
+                    data_json[i].produtos[j].id,
+                    data_json[i].produtos[j].img,
+                    data_json[i].produtos[j].nome,
+                    data_json[i].produtos[j].descricao,
+                    data_json[i].produtos[j].preco,
+                    data_json[i].produtos[j].url_compra
+                  )
+                }
+
+                conteudo_html += '</div>'
+              }
+            }
+            conteudo.innerHTML = conteudo_html
+          }
+        }
+      }
+
+      //##### Template Engine ######
+
+      //Alerta
+      template_alerta = function (mensagem, tipo) {
+        return (
+          '<div class="alert alert-' +
+          tipo +
+          '" role="alert">' +
+          mensagem +
+          '</div>'
+        )
+      }
+
+      //Categoria
+      template_categoria = function (titulo) {
+        return (
+          '<div class="row">' +
+          '<div class="col-12">' +
+          '<h1 class="categoria"><strong>Categoria:</strong> ' +
+          titulo +
+          '</h1>' +
+          '</div>' +
+          '</div>'
+        )
+      }
+
+      //Card
+      template_produto = function (id, img, nome, descricao, preco, url) {
+        return (
+          '<div class="col-12 col-md-4">' +
+          '<div class="card">' +
+          '<div class="img_produto"><img src="' +
+          img +
+          '" class="card-img-top" alt="produto 1"></div>' +
+          '<div class="card-body">' +
+          '<h5 class="card-title">' +
+          nome +
+          '</h5>' +
+          '<p class="card-text">' +
+          descricao +
+          '</p>' +
+          '<strong>R$ ' +
+          preco +
+          '</strong>' +
+          '</div>' +
+          '</div>' +
+          '</div>'
+        )
+      }
+    </script>
+  </body>
+</html>
