@@ -2,8 +2,13 @@ header{
     background-image: url(../img/bg1.jpg);
     background-size: 150px;
     height: 80px;
-    -webkit-box-shadow: 0px 5px 19px 0px rgba(255,92,183,0.3); 
-    box-shadow: 0px 5px 19px 0px rgba(255,92,183,0.3);
+    -webkit-box-shadow: 0px 5px 19px 0px rgba(231, 121, 32,0.3); 
+    box-shadow: 0px 5px 19px 0px rgba(231, 121, 32,0.3);
+}
+
+.button {
+    background: #320001;
+    border-color: #320001;
 }
 
 .area_logo{
@@ -16,10 +21,10 @@ header{
     left: 50%;
     top: -10px;
     margin-left: -100px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    -webkit-box-shadow: 0px 5px 19px 0px rgba(255,92,183,0.3); 
-    box-shadow: 0px 5px 19px 0px rgba(255,92,183,0.3);
+    padding-top: 20px;
+    padding-bottom: 15px;
+    -webkit-box-shadow: 0px 5px 19px 0px rgba(231, 121, 32,0.3); 
+    box-shadow: 0px 5px 19px 0px rgba(231, 121, 32,0.3);
 }
 
 .area_logo img{
@@ -51,11 +56,11 @@ main .card{
 main .card .card-body{
     margin-top: 70px;
     padding-top: 64px;
-    border: 1px #ff5cb7 dashed;
+    border: 1px #320001 dashed;
 }
 
 main .card .card-title{
-    color: #633099;
+    color: #E77920;
 }
 
 .img_produto{
@@ -63,7 +68,7 @@ main .card .card-title{
     position: absolute;
     left: 50%;
     margin-left: -64px;        
-    border: 1px #ff5cb7 dashed;
+    border: 1px #320001 dashed;
     border-radius: 64px;
     overflow: hidden;
 }
@@ -73,7 +78,13 @@ main .card .card-title{
 }
 
 .btAddCarrinho{
-    background: #633099;
+    background: #e08e4a;
+    border-color: #e08e4a;
+}
+
+.btAddCarrinho:hover{
+    background: #E77920;
+    border-color: #E77920;
 }
 
 .input_quant{
@@ -88,18 +99,7 @@ footer{
     text-align: center;
 }
 
-.btAdd{
-    position: absolute;
-    float: right;
-    right: 25px;
-    top: -60px;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    background: #633099;
-}
-
 #btInstall{
-    background-color: #ff5cb7;
-    border: #ff5cb7;
+    background-color: #e7812d;
+    border: #e7812d;
 }
